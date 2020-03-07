@@ -3,8 +3,8 @@
 @section('content')
 
     <div class="title m-b-md">
-        {{ $data[0]->crypto_name }}
-
+        <img src="{{ asset('assets/img/') }}/{{ $data[0]->crypto_logo }}.png" alt="{{ $data[0]->crypto_logo }} Logo" width="32px">
+        <p> {{ $data[0]->crypto_name }}</p>
     </div>
 
 

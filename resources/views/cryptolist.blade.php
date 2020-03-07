@@ -6,23 +6,13 @@
                     Liste des cryptomonnaies
                 </div>
 
-                <div>
-                    <ol>
-                    @foreach ($cryptos as $crypto)
 
-                        <li>{{ $crypto->crypto_name }} (sigle: {{ $crypto->crypto_code }})</li>
-
-                    @endforeach
-                    </ol>
-                </div>
 
 <table class="table is-hoverable">
     <thead>
         <tr>
             <th>cryptomonnaie</th>
             <th>sigle</th>
-            <th></th>
-            <th></th>
             <th></th>
         </tr>
     </thead>
@@ -31,6 +21,14 @@
             <tr>
                 <td><a href="{{ route('cryptoDetails',$crypto->id_crypto) }}">{{ $crypto->crypto_name }}</a></td>
                 <td><a href="{{ route('cryptoDetails',$crypto->id_crypto) }}"><strong>{{ $crypto->crypto_code }}</strong></a></td>
+                <td>
+                    <a href="{{ route('cryptoDetails',$crypto->id_crypto) }}">
+                        <img src="{{ asset('assets/img/') }}/{{ $crypto->crypto_logo }}.png" alt="{{ $crypto->crypto_logo }} Logo" width="32px">
+                    </a>
+                </td>
+
+
+
             </tr>
         @endforeach
     </tbody>

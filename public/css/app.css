@@ -1,0 +1,12 @@
+.title p {
+    line-height: 32px;
+    float: left;
+}
+
+.title img {
+    margin-left: 10px;
+}
+
+nav ul {
+    margin-left: 10px;
+}

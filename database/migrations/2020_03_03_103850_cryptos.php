@@ -18,6 +18,7 @@ class Cryptos extends Migration
         Schema::create('cryptos', function (Blueprint $table) {
             $table->bigIncrements('id_crypto');
             $table->string('crypto_name');
+            $table->string('crypto_logo');
             $table->float('quotation_now');
             $table->string('crypto_code');
             $table->timestamps();

@@ -19,6 +19,7 @@
         </ul>
 
     </nav>
+    <div class="date_du_jour">Date : {{ \Carbon\Carbon::now()->isoFormat('LL') }}</div>
 
     <main class="section">
         <div class="container">
